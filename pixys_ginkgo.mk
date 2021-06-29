@@ -23,17 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common NezukoOS stuff
+# Inherit some common PixysOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
-NEZUKO_MAINTAINER :=  whyredFire & dsashwin
-$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
-
-PRODUCT_PRODUCT_PROPERTIES += \
-ro.nezuko.cpu=trinket
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := nezuko_ginkgo
+PRODUCT_NAME := pixys_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8

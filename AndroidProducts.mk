@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nezuko_ginkgo.mk
+    $(LOCAL_DIR)/pixys_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    nezuko_ginkgo-user \
-    nezuko_ginkgo-userdebug \
-    nezuko_ginkgo-eng
+    pixys_ginkgo-user \
+    pixys_ginkgo-userdebug \
+    pixys_ginkgo-eng
